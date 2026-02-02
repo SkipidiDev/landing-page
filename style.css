@@ -11,7 +11,21 @@ body {
   min-height: 100vh;
 }
 
-body, .header, .main, .footer {
+ul {
+  /* header link text */
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  /* link */
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
   display: flex;
   flex-direction: column;
 }
