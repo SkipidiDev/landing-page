@@ -40,7 +40,15 @@ button {
 
 /* || UTILITIES */
 
-.flex {
+.flex { display: flex; }
+
+.flex-c { flex-direction: column; }
+
+.space-b { justify-content: space-between; }
+
+.a-center { align-items: center; }
+
+.j-center { justify-content: center; }
   display: flex;
 }
 
