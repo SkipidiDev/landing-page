@@ -46,6 +46,7 @@ button {
 .space-b { justify-content: space-between; }
 .a-center { align-items: center; }
 .j-center { justify-content: center; }
+.flex-1 { flex: 1; }
 
 /* color */
 .dark-bg { background-color: #1F2937; }
