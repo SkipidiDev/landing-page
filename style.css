@@ -56,7 +56,17 @@ button {
 
 .gray-t { color: #E5E7EB; }
 
-.font-b {
+.font-b { font-weight: 900; }
+
+.font-s-36 { font-size: 36px; }
+
+/* temporary borders */
+.border-r { border: dashed 2px red; }
+.border-c { border: dashed 2px cyan; }
+.border-g { border: dashed 2px green; }
+.border-m { border: dashed 2px magenta; }
+.border-y { border: dashed 2px yellow; }
+.border-b { border: dashed 2px blue; }
   font-weight: 900;
 }
 
