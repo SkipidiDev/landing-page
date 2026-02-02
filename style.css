@@ -26,6 +26,18 @@ a {
   color: #e5e7eb;
   font-size: 18px;
 }
+
+button {
+  /* sign up button */
+  background-color: #3882F6;
+  color: #f9faf8;
+  height: 35px;
+  width: 125px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
   display: flex;
   flex-direction: column;
 }
