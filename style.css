@@ -40,24 +40,20 @@ button {
 
 /* || UTILITIES */
 
+/* flexbox */
 .flex { display: flex; }
-
 .flex-c { flex-direction: column; }
-
 .space-b { justify-content: space-between; }
-
 .a-center { align-items: center; }
-
 .j-center { justify-content: center; }
 
+/* color */
 .dark-bg { background-color: #1F2937; }
-
 .white-t { color: #F9FAF8; }
-
 .gray-t { color: #E5E7EB; }
 
+/* font */
 .font-b { font-weight: 900; }
-
 .font-s-36 { font-size: 36px; }
 
 /* temporary borders */
