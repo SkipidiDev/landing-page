@@ -38,6 +38,16 @@ button {
   cursor: pointer;
 }
 
+/* || UTILITIES */
+
+.flex {
   display: flex;
+}
+
+.flex-1 {
+  flex: 1; /* makes both take equal space */
+}
+
+.flex-c {
   flex-direction: column;
 }
