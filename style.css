@@ -1,44 +1,120 @@
-/* || GENERAL STYLES */
+/*
+   TABLE OF CONTENTS
+   1. Reset & Variables
+   2. Base Styles
+   3. Header
+   4. Hero Section
+   5. Info Section
+   6. Quote Section
+   7. Call to Action
+   8. Footer
+*/
 
-body, .header, .main, .footer {
-  display: flex;
-  flex-direction: column;
-}
 
-body {
-  font-family: "Roboto", Verdana, sans-serif;
-  margin: 0;
-  min-height: 100vh;
-}
+/* 
+   1. RESET
+*/
 
-ul {
-  /* header link text */
-  display: flex;
-  gap: 24px;
-  list-style: none;
+* {
+  /* universal selector */
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* another common universal style */
 }
 
 a {
-  /* link */
   text-decoration: none;
   color: #e5e7eb;
-  font-size: 18px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 button {
-  /* sign up button */
-  background-color: #3882F6;
-  color: #f9faf8;
-  height: 35px;
-  width: 125px;
-  font-size: 18px;
-  border-radius: 12px;
+  border: none;
   cursor: pointer;
 }
 
-/* || UTILITIES */
+/*
+   2. BASE STYLES 
+*/
+
+body {
+  font-family: "Roboto", Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+body, header, main, footer {
+  display: flex;
+}
+
+body, main, footer {
+  flex-direction: column;
+}
+
+header, .hero, footer {
+  background-color: #1F2937;
+}
+
+/* 
+   3. HEADER 
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+nav a {
+  font-size: 18px;
+  color: #E5E7EB;
+  margin-left: 24px;
+}
+
+/* 
+   4. HERO SECTION 
+*/
+
+main { 
+  flex: 1;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  color: #F9FAF8;
+}
+
+/*
+   5. INFO SECTION 
+*/
+
+/*
+   6. QUOTE SECTION 
+*/
+
+/*
+   7. CALL TO ACTION 
+*/
+
+/*
+   8. FOOTER 
+*/
+
+footer {
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  color: #F9FAF8;
+}
 
 /* temporary borders */
 .border-r { border: dashed 2px red; }
@@ -48,47 +124,11 @@ button {
 .border-y { border: dashed 2px yellow; }
 .border-b { border: dashed 2px blue; }
 
-/* SITEWIDE */
-
-.header {
-  /* header */
-  padding: 16px 78px;
-}
-
-.top {
-  /* header navigation */
-  font-size: 24px;
-}
-
-.bottom {
-  /* bottom navigation */
-  margin: 64px 0;
-}
-
-.left-size {
-  flex: 0.4;
-}
-
-.right-size {
-  flex: 0.6;
-}
-
-.main {
-  padding: 0 78px;
-  align-items: center;
-}
-
-.title {
-  font-size: 36px;
-  color: #1F2937;
-  font-weight: 900;
-  text-align: center;
-  margin: 32px 0;
-}
-
-.footer {
-  /* footer */
-  padding: 16px 0;
-  align-items: center;
-  justify-content: center;
-}
+/* button {
+  background-color: #3882F6;
+  color: #f9faf8;
+  height: 35px;
+  width: 125px;
+  font-size: 18px;
+  border-radius: 12px;
+} */
