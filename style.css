@@ -1,6 +1,6 @@
 /* -------------------------
    TABLE OF CONTENTS
-   1. Reset & Variables
+   1. Reset
    2. Base Styles
    3. Header
    4. Hero Section
@@ -32,11 +32,6 @@ img {
   max-width: 100%;
 }
 
-button {
-  border: none;
-  cursor: pointer;
-}
-
 /* -------------------------
    2. BASE STYLES 
   ------------------------- */
@@ -44,18 +39,25 @@ button {
 body {
   font-family: "Roboto", Verdana, sans-serif;
   min-height: 100vh;
-}
-
-body, header, main, footer {
   display: flex;
-}
-
-body, main, footer {
   flex-direction: column;
 }
 
-header, .hero, footer {
+header, 
+.hero, 
+footer {
   background-color: #1F2937;
+}
+
+button {
+  background-color: #3882F6;
+  color: #f9faf8;
+  height: 35px;
+  width: 125px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
 }
 
 /* -------------------------
@@ -67,6 +69,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: 60px;
 }
 
 /* Logo */
@@ -87,13 +92,45 @@ nav a {
   ------------------------- */
 
 main { 
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   color: #F9FAF8;
+  padding: 60px;
+  height: 400px;
+}
+
+.hero__content {
+  max-width: 600px;
+  height: 240px;
+}
+
+.hero__content h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero__content p {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #E5E7EB;
+}
+
+.hero__image {
+  width: 50%;
+  height: 240px;
+}
+
+.hero__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* -------------------------
@@ -113,6 +150,7 @@ main {
   ------------------------- */
 
 footer {
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 0;
@@ -126,12 +164,3 @@ footer {
 .border-m { border: dashed 2px magenta; }
 .border-y { border: dashed 2px yellow; }
 .border-b { border: dashed 2px blue; }
-
-/* button {
-  background-color: #3882F6;
-  color: #f9faf8;
-  height: 35px;
-  width: 125px;
-  font-size: 18px;
-  border-radius: 12px;
-} */
