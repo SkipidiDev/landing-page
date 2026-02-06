@@ -186,8 +186,9 @@ main {
 .testimonials {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #E5E7EB;
-  padding: 100px 0;
+  height: 200px;
   text-align: right;
 }
 
@@ -206,6 +207,34 @@ main {
    7. CALL TO ACTION 
   ------------------------- */
 
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3882F6;
+  margin: 60px 80px;
+  padding: 40px 120px;
+  border-radius: 12px;
+}
+
+.cta__content {
+  color: #F9FAF8;
+}
+
+.cta__content h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.cta__content p {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.cta__btn {
+  border: 2px solid #F9FAF8;
+}
+
 /* -------------------------
    8. FOOTER 
   ------------------------- */
@@ -214,8 +243,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 0;
   color: #F9FAF8;
+  font-size: 18px;
+  height: 60px;
 }
 
 /* Temporary Borders */
