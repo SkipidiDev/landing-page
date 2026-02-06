@@ -4,7 +4,7 @@
    2. Base Styles
    3. Header
    4. Hero Section
-   5. Info Section
+   5. Features Section
    6. Quote Section
    7. Call to Action
    8. Footer
@@ -134,8 +134,49 @@ main {
 }
 
 /* -------------------------
-   5. INFO SECTION 
+   5. FEATURES SECTION 
   ------------------------- */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Infor header */
+.features h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1F2937;
+  margin: 40px 0;
+}
+
+/* Card Container */
+.features__cards {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px; /* standard size for features illustrates */
+}
+
+/* Card Items */
+.features__item {
+  max-width: 250px; /* fixed size for item */
+  text-align: center; /* text stay in center  */
+}
+
+/* Card Image */
+.features__item img {
+  width: 200px; /* fixed size for image */
+  height: 200px; /* fixed size for image */
+  object-fit: cover; 
+}
+
+/* Card Subtext */
+.features__item p {
+  font-size: 18px;
+  color: #4B5563;
+  margin-top: 12px;
+}
 
 /* -------------------------
    6. QUOTE SECTION 
